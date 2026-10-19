@@ -1,0 +1,299 @@
+@media (max-width: 991.98px) {
+  .offcanvas-lg {
+    width: min(88vw, 360px);
+  }
+  .offcanvas-lg .navbar-nav {
+    padding: 1rem 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-hero h1 {
+    font-size: clamp(3.1rem, 14vw, 5rem);
+    line-height: 1.24;
+  }
+  .home-hero::after {
+    right: -1rem;
+    bottom: -2rem;
+    font-size: 12rem;
+  }
+  .home-hero-content {
+    padding-top: 3rem;
+  }
+  .scroll-cue {
+    right: 1rem;
+    bottom: 1.5rem;
+  }
+  .story-section {
+    padding: 5.5rem 0;
+  }
+  .coconut-visual {
+    min-height: 420px;
+  }
+  .coconut-section h2, .land-section h2 {
+    font-size: 3.5rem;
+  }
+  .comparison {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+  .comparison-divider {
+    padding: .6rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .comparison-side {
+    padding: 1.6rem;
+  }
+  .land-location {
+    justify-content: flex-start;
+  }
+  .land-lower {
+    margin-top: 2.5rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid {
+    gap: 2rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .land-features {
+    grid-template-columns: 1fr;
+  }
+  .history-heading {
+    display: block;
+    margin-bottom: 3.5rem;
+  }
+  .history-intro {
+    margin-top: 2rem;
+  }
+  .history-section h2 {
+    font-size: 3.2rem;
+  }
+  .timeline-component {
+    display: block;
+    padding-left: 1.25rem;
+  }
+  .timeline-component::before {
+    top: 0;
+    bottom: 0;
+    left: .38rem;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+  .timeline-event {
+    padding: 0 0 3rem 1.5rem;
+  }
+  .timeline-marker {
+    position: absolute;
+    top: .05rem;
+    left: -.03rem;
+    margin: 0;
+  }
+  .timeline-image {
+    height: 180px;
+  }
+  .timeline-copy {
+    padding-right: 0;
+  }
+  .timeline-copy h3 {
+    min-height: 0;
+  }
+  .history-quote {
+    margin-top: 3rem;
+  }
+  .science-heading {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .science-intro {
+    margin-top: 2rem;
+  }
+  .science-section h2 {
+    font-size: 3.2rem;
+  }
+  .science-diagrams {
+    margin-bottom: 3.5rem;
+  }
+  .science-flow {
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .science-step {
+    flex-direction: column;
+    gap: .45rem;
+  }
+  .science-step span {
+    width: 100%;
+    min-height: 0;
+  }
+  .science-step i {
+    flex-basis: auto;
+    transform: rotate(90deg);
+  }
+  .macapuno-note {
+    margin-bottom: 4rem;
+    padding-left: 1.25rem;
+  }
+  .anatomy-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-top: 1.25rem;
+  }
+  .farmer-heading {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .farmer-intro {
+    margin-top: 2rem;
+  }
+  .farmer-section h2 {
+    font-size: 3.2rem;
+  }
+  .farmer-portrait {
+    min-height: 500px;
+    padding: 2rem;
+  }
+  .farmer-portrait blockquote {
+    font-size: 2.3rem;
+  }
+  .farmer-caption {
+    right: 2rem;
+    bottom: 1.5rem;
+  }
+  .farmer-roles {
+    grid-template-columns: 1fr;
+  }
+  .farmer-role, .farmer-role-featured {
+    min-height: 210px;
+  }
+  .farmer-role-with-image {
+    min-height: 360px;
+    grid-template-rows: 170px 1fr;
+  }
+  .role-image {
+    min-height: 170px;
+  }
+  .food-heading {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .food-intro {
+    margin-top: 2rem;
+  }
+  .food-section h2 {
+    font-size: 3.2rem;
+  }
+  .food-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+  }
+  .food-card:nth-child(2), .food-card:nth-child(4), .food-card:nth-child(6), .food-card:nth-child(8) {
+    margin-top: 1.5rem;
+  }
+  .food-card-image {
+    height: 165px;
+  }
+  .food-card-body {
+    min-height: 220px;
+    padding: 1rem;
+  }
+  .food-card h3 {
+    font-size: 1.1rem;
+  }
+  .food-card-body > p:not(.food-card-index) {
+    font-size: .8rem;
+  }
+  .food-statistic {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 4rem;
+  }
+  .food-statistic strong {
+    font-size: 4.2rem;
+  }
+  .product-heading {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .product-intro {
+    margin-top: 2rem;
+  }
+  .product-section h2 {
+    font-size: 3.2rem;
+  }
+  .product-showcase {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .product-card-body {
+    min-height: 0;
+    padding: 1.5rem;
+  }
+  .product-card h3 {
+    font-size: 1.4rem;
+  }
+  .gi-heading {
+    display: block;
+    margin-bottom: 3rem;
+  }
+  .gi-intro {
+    margin-top: 2rem;
+  }
+  .gi-section h2 {
+    font-size: 3.2rem;
+  }
+  .gi-detail {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+  .gi-certificate {
+    max-width: 520px;
+  }
+  .gi-information {
+    max-width: none;
+  }
+  .gi-flow {
+    grid-template-columns: 1fr;
+    gap: .6rem;
+    margin: 3.5rem 0;
+  }
+  .gi-flow-step {
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .gi-flow-step span {
+    width: 100%;
+    min-height: 3.5rem;
+  }
+  .gi-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .final-cta {
+    min-height: 580px;
+  }
+  .final-cta-content {
+    padding: 4rem 0;
+  }
+  .final-cta h2 {
+    font-size: 3.5rem;
+  }
+  .final-cta-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .product-showcase, .detail-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

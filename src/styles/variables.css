@@ -1,0 +1,22 @@
+:root {
+  --forest: #0E5135;
+  --leaf: #287A50;
+  --cream: #F7F2E5;
+  --sand: #E6D7B8;
+  --gold: #B78A3B;
+  --earth: #68452F;
+  --white: #FFFFFF;
+  --ink: #18231D;
+  --muted: #5b675f;
+  --line: rgba(24, 35, 29, 0.16);
+  --white-soft: rgba(255, 255, 255, 0.84);
+  --white-muted: rgba(255, 255, 255, 0.66);
+  --white-faint: rgba(255, 255, 255, 0.5);
+  --mark-overlay: rgba(255, 255, 255, 0.08);
+  --footer-line: rgba(255, 255, 255, 0.2);
+  --shadow-soft: 0 0.5rem 1.5rem rgba(24, 35, 29, 0.12);
+  --focus-ring: rgba(40, 122, 80, 0.2);
+  --transition-standard: 220ms ease;
+  --display: 'Be Vietnam Pro', 'Roboto', Arial, sans-serif;
+  --body: 'Roboto', Arial, sans-serif;
+}

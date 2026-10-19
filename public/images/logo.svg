@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Icon dừa sáp</title>
+  <desc id="desc">Nửa quả dừa sáp với cơm dừa dày và ba lá dừa xanh.</desc>
+
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- Lá dừa -->
+    <path d="M220 199C168 147 119 119 54 107c44 44 86 85 141 119Z" fill="#2f7d32"/>
+    <path d="M226 183C205 112 204 68 222 27c27 54 42 102 36 164Z" fill="#256b2a"/>
+    <path d="M242 190c23-65 57-109 111-140-14 59-41 109-91 153Z" fill="#3b8f3e"/>
+    <path d="M201 202c-38-27-77-47-121-63" fill="none" stroke="#72b743" stroke-width="10"/>
+    <path d="M239 179c-4-48-8-92-16-128" fill="none" stroke="#72b743" stroke-width="10"/>
+    <path d="M257 187c27-43 56-79 84-108" fill="none" stroke="#82bf49" stroke-width="10"/>
+
+    <!-- Vỏ dừa -->
+    <path d="M87 260c18-82 91-134 181-137 93-3 165 47 178 132 15 102-54 200-176 214C153 482 65 388 87 260Z" fill="#753819"/>
+    <path d="M101 271c14-73 82-124 168-126 83-2 150 43 161 117 13 87-49 175-160 188-105 12-189-72-169-179Z" fill="#a75625"/>
+    <path d="M119 288c8-66 67-117 148-121 78-4 137 36 145 101 10 78-49 151-144 160-93 9-161-66-149-140Z" fill="#542b17"/>
+
+    <!-- Cơm dừa sáp dày -->
+    <path d="M133 285c11-56 62-97 133-101 68-4 119 30 128 84 10 63-39 127-126 139-83 11-147-54-135-122Z" fill="#fffdf4"/>
+    <path d="M153 292c9-43 49-76 109-80 58-4 101 22 111 64 12 49-30 101-104 111-70 10-126-40-116-95Z" fill="#f4ecd7"/>
+    <path d="M181 301c7-29 37-52 80-55 43-3 75 15 82 44 8 34-24 68-75 74-49 6-94-26-87-63Z" fill="#fff9e8"/>
+    <path d="M217 308c5-17 23-29 48-30 25-2 43 8 47 24 5 19-14 39-44 42-29 4-56-15-51-36Z" fill="#ead5a6"/>
+
+    <!-- Điểm sáng tạo cảm giác mềm, béo -->
+    <path d="M168 263c20-33 59-52 105-54" fill="none" stroke="#ffffff" stroke-width="13" opacity=".8"/>
+
+    <!-- Vân vỏ -->
+    <g fill="none" stroke="#d27a36" stroke-width="7" opacity=".9">
+      <path d="M126 344c17 33 40 58 69 76"/>
+      <path d="M153 367c9 22 24 42 43 56"/>
+      <path d="M337 397c25-20 44-44 57-73"/>
+      <path d="M366 374c14-17 24-36 31-56"/>
+      <path d="M239 443c-5-13-7-25-7-38"/>
+      <path d="M292 440c7-14 11-27 12-41"/>
+    </g>
+  </g>
+</svg>
