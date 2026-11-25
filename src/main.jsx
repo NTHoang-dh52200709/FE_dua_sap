@@ -9,6 +9,7 @@ import './styles/navbar.css'
 import './styles/sections.css'
 import './styles/responsive.css'
 import './styles/detail.css'
+import './styles/account.css'
 import './index.css'
 import App from './App.jsx'
 

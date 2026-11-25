@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
+import { useAuth } from '../auth/useAuth'
 
 const navigation = [
   { label: 'Dừa sáp', path: '/dua-sap' },
@@ -16,6 +17,8 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeTheme, setActiveTheme] = useState('home')
+  const menuToggleRef = useRef(null)
+  const { currentUser } = useAuth()
   const { pathname } = useLocation()
 
   useEffect(() => {
@@ -54,6 +57,19 @@ function Navbar() {
     }
   }, [])
 
+  useEffect(() => {
+    if (!isMenuOpen) return undefined
+
+    const handleKeyDown = (event) => {
+      if (event.key !== 'Escape') return
+      setIsMenuOpen(false)
+      menuToggleRef.current?.focus()
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [isMenuOpen])
+
   const headerClassName = [
     'site-header',
     'sticky-top',
@@ -73,6 +89,7 @@ function Navbar() {
             <span className="brand-name"><strong>DỪA SÁP</strong><small>TRÀ VINH</small></span>
           </NavLink>
           <button
+            ref={menuToggleRef}
             className="navbar-toggler d-lg-none"
             type="button"
             aria-controls="mainNavigation"
@@ -87,7 +104,6 @@ function Navbar() {
             tabIndex="-1"
             id="mainNavigation"
             aria-labelledby="mainNavigationLabel"
-            aria-hidden={!isMenuOpen}
           >
             <div className="offcanvas-header d-lg-none">
               <h2 className="offcanvas-title" id="mainNavigationLabel">Điều hướng</h2>
@@ -112,6 +128,17 @@ function Navbar() {
                   </li>
                 )
               })}
+              <li className="nav-item account-nav-item">
+                <NavLink
+                  className={({ isActive }) => `account-nav-link${isActive ? ' active' : ''}`}
+                  to="/tai-khoan"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-label={currentUser ? `Tài khoản của ${currentUser.fullName}` : 'Đăng nhập hoặc đăng ký'}
+                >
+                  <i className="bi bi-person-circle" aria-hidden="true" />
+                  <span>{currentUser?.fullName?.split(' ').slice(-1)[0] || 'Tài khoản'}</span>
+                </NavLink>
+              </li>
             </ul>
           </div>
           {isMenuOpen && (
